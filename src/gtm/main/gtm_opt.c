@@ -68,7 +68,7 @@ Gtm_Startup_Mode_Options();
  * GTM option variables that are exported from this module
  */
 char	   *data_directory;
-char	   *GTMConfigFileName;
+char	    __attribute__((__common__)) *GTMConfigFileName;
 
 /*
  * Displayable names for context types (enum GtmContext)

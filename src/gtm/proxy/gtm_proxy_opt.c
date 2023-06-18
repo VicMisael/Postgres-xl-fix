@@ -54,7 +54,7 @@ extern int GTMServerPortNumber;
 extern int GTMProxyWorkerThreads;
 extern char *GTMProxyDataDir;
 extern char *GTMProxyConfigFileName;
-extern char *GTMConfigFileName;
+extern char __attribute__((__common__)) *GTMConfigFileName;
 
 
 /*
@@ -75,7 +75,7 @@ Server_Message_Level_Options();
  * GTM option variables that are exported from this module
  */
 char	   *data_directory;
-char	   *GTMConfigFileName;
+char	  __attribute__((__common__)) *GTMConfigFileName;
 
 
 /*

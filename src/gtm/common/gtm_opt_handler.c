@@ -51,7 +51,7 @@ static char *_ShowOption(struct config_generic * record, bool use_units);
 /*
  * Variables to bel fed by specific option definition: gtm_opt.c and gtm_proxy_opt.c
  */
-extern char *GTMConfigFileName;
+extern __attribute__((__common__)) char *GTMConfigFileName;
 extern char	   *data_directory;
 extern struct config_generic **gtm_opt_variables;
 extern int num_gtm_opt_variables;

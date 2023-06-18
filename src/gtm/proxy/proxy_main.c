@@ -71,7 +71,7 @@ int			GTMProxyPortNumber;
 int			GTMProxyWorkerThreads;
 char		*GTMProxyDataDir;
 char		*GTMProxyConfigFileName;
-char		*GTMConfigFileName;
+char		__attribute__((__common__)) *GTMConfigFileName;
 
 char		*GTMServerHost;
 int			GTMServerPortNumber;
